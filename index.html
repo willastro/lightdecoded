@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Your Name — Spectral & Imaging Data Scientist</title>
+  <style>
+    body {
+      background-color: #000;
+      margin: 0;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: white;
+      font-family: sans-serif;
+    }
+    svg {
+      width: 80vw;
+      height: 50vh;
+    }
+    .beam {
+      stroke: white;
+      stroke-width: 6;
+      stroke-dasharray: 600;
+      stroke-dashoffset: 600;
+      animation: draw-beam 2s ease-out forwards;
+    }
+    @keyframes draw-beam {
+      to { stroke-dashoffset: 0; }
+    }
+    .spectrum {
+      opacity: 0;
+      animation: show-spectrum 1.5s ease-out 2s forwards;
+    }
+    @keyframes show-spectrum {
+      to { opacity: 1; }
+    }
+    .text {
+      opacity: 0;
+      animation: fade-text 1.5s ease-out 3s forwards;
+      font-size: 1.5rem;
+    }
+    @keyframes fade-text {
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <svg viewBox="0 0 800 400">
+    <!-- White beam -->
+    <line x1="0" y1="200" x2="400" y2="200" class="beam" />
+    <!-- Prism -->
+    <polygon points="400,150 460,200 400,250" fill="gray" />
+    <!-- Spectrum rays -->
+    <g class="spectrum">
+      <line x1="460" y1="200" x2="800" y2="170" stroke="red" stroke-width="4"/>
+      <line x1="460" y1="200" x2="800" y2="180" stroke="orange" stroke-width="4"/>
+      <line x1="460" y1="200" x2="800" y2="190" stroke="yellow" stroke-width="4"/>
+      <line x1="460" y1="200" x2="800" y2="200" stroke="green" stroke-width="4"/>
+      <line x1="460" y1="200" x2="800" y2="210" stroke="blue" stroke-width="4"/>
+      <line x1="460" y1="200" x2="800" y2="220" stroke="indigo" stroke-width="4"/>
+      <line x1="460" y1="200" x2="800" y2="230" stroke="violet" stroke-width="4"/>
+    </g>
+  </svg>
+
+  <div class="text">Your Name — Spectral & Imaging Data Scientist</div>
+</body>
+</html>
