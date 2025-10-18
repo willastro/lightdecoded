@@ -1,3 +1,12 @@
+# _config.yml
 title: Your Name — Spectral & Imaging Data Scientist
-description: Portfolio and freelance services in spectral analysis, imaging, and AI-based data science.
-theme: midnight
+description: >
+  Portfolio and freelance services in spectral analysis, imaging, and AI-driven data science.
+  Specializing in spectral fitting, image analysis, and pipeline development for astronomy and remote sensing.
+theme: minima
+author: Your Name
+email: you@example.com
+github_username: your-github-username
+# Optional social links
+linkedin_username: your-linkedin-username
+show_excerpts: true
