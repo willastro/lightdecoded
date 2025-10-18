@@ -3,130 +3,110 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Spectral & Imaging Data Scientist — Splash</title>
+  <title>Your Name — Spectral & Imaging Data Scientist</title>
   <style>
-    html, body {
+    html,body {
       margin: 0;
-      padding: 0;
-      background-color: black;
-      overflow: hidden;
       height: 100%;
-      width: 100%;
+      background: black;
+      overflow: hidden;
     }
-    canvas {
-      display: block;
-    }
-    h1 {
-      position: absolute;
-      bottom: 40px;
-      width: 100%;
-      text-align: center;
-      font-family: sans-serif;
-      color: white;
-      font-size: 1.8rem;
+    #fade-overlay {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: black;
       opacity: 0;
-      animation: fadeIn 2s ease 5s forwards;
-      text-shadow: 0 0 10px rgba(255,255,255,0.5);
-    }
-    @keyframes fadeIn {
-      to { opacity: 1; }
+      pointer-events: none;
+      transition: opacity 2s ease;
+      z-index: 10;
     }
   </style>
 </head>
 <body>
   <canvas id="scene"></canvas>
-  <h1>Your Name — Spectral & Imaging Data Scientist</h1>
+  <div id="fade-overlay"></div>
 
-  <script src="https://unpkg.com/three@0.161.0/build/three.min.js"></script>
+  <!-- Three.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r161/three.min.js" crossorigin="anonymous"></script>
   <script>
     const canvas = document.getElementById("scene");
-    const renderer = new THREE.WebGLRenderer({ canvas, antialias: true });
+    const renderer = new THREE.WebGLRenderer({canvas, antialias:true});
     renderer.setSize(window.innerWidth, window.innerHeight);
-    renderer.setPixelRatio(window.devicePixelRatio);
     renderer.setClearColor(0x000000);
-
     const scene = new THREE.Scene();
 
-    // Add subtle ambient light
-    const ambient = new THREE.AmbientLight(0x404040, 2);
-    scene.add(ambient);
-
-    const light = new THREE.PointLight(0xffffff, 3);
-    light.position.set(-4, 3, 5);
-    scene.add(light);
-
-    // Camera
-    const camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 100);
+    const camera = new THREE.PerspectiveCamera(45, innerWidth/innerHeight, 0.1, 100);
     camera.position.z = 8;
-    camera.position.y = 0;
-    camera.lookAt(0, 0, 0);
 
-    // Prism geometry
-    const prismGeometry = new THREE.ConeGeometry(1.5, 2.5, 3);
-    const prismMaterial = new THREE.MeshPhysicalMaterial({
-      color: 0x99ffff,
+    // Prism
+    const prismGeom = new THREE.ConeGeometry(1, 2, 3);
+    const prismMat = new THREE.MeshPhysicalMaterial({
+      color: 0x88ffff,
       transmission: 0.8,
-      opacity: 0.8,
+      opacity: 0.9,
       transparent: true,
       roughness: 0.2,
       metalness: 0.1,
       clearcoat: 1.0,
       reflectivity: 1.0,
-      side: THREE.DoubleSide
     });
-    const prism = new THREE.Mesh(prismGeometry, prismMaterial);
+    const prism = new THREE.Mesh(prismGeom, prismMat);
     prism.rotation.z = Math.PI / 2;
-    prism.rotation.y = Math.PI / 2.5;
-    prism.position.x = 0;
+    prism.rotation.y = Math.PI / 2;
     scene.add(prism);
 
-    // Incoming beam (white)
-    const beamMaterial = new THREE.LineBasicMaterial({ color: 0xffffff });
-    const beamGeometry = new THREE.BufferGeometry().setFromPoints([
-      new THREE.Vector3(-8, 0, 0),
-      new THREE.Vector3(-1.2, 0, 0)
+    // White beam
+    const beamMat = new THREE.LineBasicMaterial({color:0xffffff});
+    const beamGeom = new THREE.BufferGeometry().setFromPoints([
+      new THREE.Vector3(-6,0,0),
+      new THREE.Vector3(-1,0,0)
     ]);
-    const beam = new THREE.Line(beamGeometry, beamMaterial);
+    const beam = new THREE.Line(beamGeom, beamMat);
     scene.add(beam);
 
     // Spectrum rays
-    const colors = [0xff0000, 0xff7f00, 0xffff00, 0x00ff00, 0x0000ff, 0x4b0082, 0x9400d3];
-    const spectra = colors.map((color, i) => {
-      const mat = new THREE.LineBasicMaterial({ color, transparent: true, opacity: 0 });
-      const geo = new THREE.BufferGeometry().setFromPoints([
-        new THREE.Vector3(1.2, 0, 0),
-        new THREE.Vector3(8, (i - 3) * 0.5, 0)
+    const colors=[0xff0000,0xff7f00,0xffff00,0x00ff00,0x0000ff,0x4b0082,0x9400d3];
+    const spectra = colors.map((c,i)=>{
+      const m=new THREE.LineBasicMaterial({color:c,transparent:true,opacity:0});
+      const g=new THREE.BufferGeometry().setFromPoints([
+        new THREE.Vector3(1,0,0),
+        new THREE.Vector3(6,(i-3)*0.3,0)
       ]);
-      const line = new THREE.Line(geo, mat);
+      const line=new THREE.Line(g,m);
       scene.add(line);
       return line;
     });
 
-    // Animation timing
-    let t = 0;
-    function animate() {
+    const light = new THREE.PointLight(0xffffff,2);
+    light.position.set(-4,2,3);
+    scene.add(light);
+
+    let t=0;
+    function animate(){
       requestAnimationFrame(animate);
-      t += 0.01;
-
-      // Rotate prism slightly
-      prism.rotation.y += 0.005;
-
-      // Fade in spectrum rays after 2 seconds
-      if (t > 2 && t < 5) {
-        const progress = Math.min((t - 2) / 2.5, 1);
-        spectra.forEach(line => line.material.opacity = progress);
+      t+=0.01;
+      prism.rotation.y+=0.005;
+      // Fade in spectrum
+      if(t>2 && t<4){
+        const p=Math.min((t-2)/1.5,1);
+        spectra.forEach(l=>l.material.opacity=p);
       }
-
-      renderer.render(scene, camera);
+      renderer.render(scene,camera);
+      if(t>6) triggerFade();
     }
-
     animate();
 
-    // Responsive resize
-    window.addEventListener("resize", () => {
-      camera.aspect = window.innerWidth / window.innerHeight;
+    function triggerFade(){
+      const overlay=document.getElementById("fade-overlay");
+      overlay.style.opacity="1";
+      setTimeout(()=>window.location.href="home.html",2000); // 2s fade, then redirect
+    }
+
+    window.addEventListener('resize',()=>{
+      camera.aspect=innerWidth/innerHeight;
       camera.updateProjectionMatrix();
-      renderer.setSize(window.innerWidth, window.innerHeight);
+      renderer.setSize(innerWidth,innerHeight);
     });
   </script>
 </body>
