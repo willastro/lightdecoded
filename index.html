@@ -1,49 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Spectral & Imaging Data Scientist — Splash</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Your Name — Spectral & Imaging Data Scientist</title>
   <style>
-    html, body {
+    body, html {
       margin: 0;
-      height: 100%;
+      padding: 0;
       background-color: black;
       overflow: hidden;
+      color: white;
+      font-family: sans-serif;
+      text-align: center;
     }
-    canvas {
-      display: block;
-    }
-    #fade-overlay {
-      position: fixed;
-      top: 0;
-      left: 0;
+    h1 {
+      position: absolute;
+      bottom: 40px;
       width: 100%;
-      height: 100%;
-      background: black;
+      font-size: 1.8rem;
       opacity: 0;
-      transition: opacity 2s ease;
-      z-index: 10;
+      animation: fadeIn 2s ease 4s forwards;
+      text-shadow: 0 0 10px rgba(255,255,255,0.5);
+    }
+    @keyframes fadeIn {
+      to { opacity: 1; }
     }
   </style>
 </head>
 <body>
   <canvas id="scene"></canvas>
-  <div id="fade-overlay"></div>
+  <h1>Your Name — Spectral & Imaging Data Scientist</h1>
 
-  <script src="https://unpkg.com/three@0.161.0/build/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.161.0/build/three.min.js"></script>
   <script>
-    const canvas = document.getElementById('scene');
+    const canvas = document.getElementById("scene");
     const renderer = new THREE.WebGLRenderer({ canvas, antialias: true });
     renderer.setSize(window.innerWidth, window.innerHeight);
     renderer.setClearColor(0x000000);
-    document.body.appendChild(renderer.domElement);
 
     const scene = new THREE.Scene();
-    const camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 100);
+    const camera = new THREE.PerspectiveCamera(45, window.innerWidth/window.innerHeight, 0.1, 100);
     camera.position.z = 8;
 
-    // Prism
+    // Prism geometry
     const prismGeometry = new THREE.ConeGeometry(1, 2, 3);
     const prismMaterial = new THREE.MeshPhysicalMaterial({
       color: 0x88ffff,
@@ -53,31 +53,33 @@
       roughness: 0.2,
       metalness: 0.1,
       clearcoat: 1.0,
-      reflectivity: 1.0
+      reflectivity: 1.0,
     });
     const prism = new THREE.Mesh(prismGeometry, prismMaterial);
     prism.rotation.z = Math.PI / 2;
     prism.rotation.y = Math.PI / 2;
     scene.add(prism);
 
-    // White beam
+    // Light beam (white)
     const beamMaterial = new THREE.LineBasicMaterial({ color: 0xffffff });
     const beamGeometry = new THREE.BufferGeometry().setFromPoints([
       new THREE.Vector3(-6, 0, 0),
-      new THREE.Vector3(-1, 0, 0)
+      new THREE.Vector3(-1, 0, 0),
     ]);
     const beam = new THREE.Line(beamGeometry, beamMaterial);
     scene.add(beam);
 
     // Spectrum rays
     const colors = [0xff0000, 0xff7f00, 0xffff00, 0x00ff00, 0x0000ff, 0x4b0082, 0x9400d3];
-    const spectra = colors.map((c, i) => {
-      const material = new THREE.LineBasicMaterial({ color: c, transparent: true, opacity: 0 });
-      const geometry = new THREE.BufferGeometry().setFromPoints([
+    const spectra = colors.map((color, i) => {
+      const mat = new THREE.LineBasicMaterial({ color });
+      const geo = new THREE.BufferGeometry().setFromPoints([
         new THREE.Vector3(1, 0, 0),
-        new THREE.Vector3(6, (i - 3) * 0.3, 0)
+        new THREE.Vector3(6, (i - 3) * 0.3, 0),
       ]);
-      const line = new THREE.Line(geometry, material);
+      const line = new THREE.Line(geo, mat);
+      line.material.transparent = true;
+      line.material.opacity = 0;
       scene.add(line);
       return line;
     });
@@ -86,35 +88,28 @@
     light.position.set(-4, 2, 3);
     scene.add(light);
 
-    let t = 0;
+    // Animation
+    let time = 0;
     function animate() {
       requestAnimationFrame(animate);
-      t += 0.01;
+      time += 0.01;
       prism.rotation.y += 0.005;
 
-      if (t > 2 && t < 4) {
-        const p = Math.min((t - 2) / 1.5, 1);
-        spectra.forEach(line => line.material.opacity = p);
+      // Fade in spectrum gradually
+      if (time > 2 && time < 6) {
+        const progress = Math.min((time - 2) / 2, 1);
+        spectra.forEach(line => line.material.opacity = progress);
       }
 
       renderer.render(scene, camera);
-
-      if (t > 6) triggerFade();
     }
+    animate();
 
-    function triggerFade() {
-      const overlay = document.getElementById("fade-overlay");
-      overlay.style.opacity = "1";
-      setTimeout(() => window.location.href = "home.html", 2000);
-    }
-
-    window.addEventListener("resize", () => {
+    window.addEventListener('resize', () => {
       camera.aspect = window.innerWidth / window.innerHeight;
       camera.updateProjectionMatrix();
       renderer.setSize(window.innerWidth, window.innerHeight);
     });
-
-    animate();
   </script>
 </body>
 </html>
