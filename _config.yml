@@ -4,6 +4,7 @@ description: >
   Portfolio and freelance services in spectral analysis, imaging, and AI-driven data science.
   Specializing in spectral fitting, image analysis, and pipeline development for astronomy and remote sensing.
 theme: minima
+skin: dark
 author: Your Name
 email: you@example.com
 github_username: your-github-username
