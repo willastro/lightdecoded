@@ -77,18 +77,6 @@
     text-shadow: 0 0 15px rgba(255,255,255,0.3);
   }
 
-  /* Main content (hidden initially) */
-  .main {
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 2s ease;
-  }
-
-  body.loaded .main {
-    opacity: 1;
-    pointer-events: all;
-  }
-
   /* ---------- ANIMATIONS ---------- */
   @keyframes beamIn {
     from { opacity: 0; stroke-dasharray: 200; stroke-dashoffset: 200; }
@@ -137,23 +125,14 @@
     <h1>Your Name — Spectral & Imaging Data Scientist</h1>
   </div>
 
-  <div class="main">
-    <section style="padding:80px 10%; max-width:800px; margin:auto;">
-      <h2>Welcome to My Portfolio</h2>
-      <p>
-        I’m a spectral and imaging data scientist specializing in AI-driven analysis,
-        automated spectral fitting, and scientific visualization.
-      </p>
-      <p>
-        Explore my recent projects below or get in touch for collaborations and freelance work.
-      </p>
-    </section>
-  </div>
-
   <script>
-    // After animation ends (~8s), fade into main page
+    // After animation ends (~8s total), redirect to index.md
     setTimeout(() => {
-      document.body.classList.add("loaded");
+      document.body.style.transition = "opacity 2s ease";
+      document.body.style.opacity = "0";
+      setTimeout(() => {
+        window.location.href = "index.md";
+      }, 2000); // Wait for fade to finish
     }, 8000);
   </script>
 </body>
