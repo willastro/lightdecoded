@@ -5,12 +5,8 @@
   }
 </script>
 
----
-layout: home
-title: Welcome
----
 
-# 👋 Hi, I'm Dr. Will Rocha  
+# 👋 Hi, I'm Dr. Will Rocha. Welcome to Light Decoded!  
 **Spectral & Imaging Data Scientist**
 
 I specialize in extracting insights from complex spectra and imaging data — from astronomy to medical imaging.  
