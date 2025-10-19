@@ -13,9 +13,9 @@
   <div class="dropdown">
     <button class="dropbtn">Projects ▾</button>
     <div class="dropdown-content">
-      <a href="/lightdecoded/Portifolio/Project-1.md">Spectral Analysis</a>
-      <a href="/lightdecoded/Portifolio/imaging-study.md">Imaging Study</a>
-      <a href="/lightdecoded/Portifolio/other-project.md">Other Project</a>
+      <a href="/lightdecoded/projects/spec_analysis.md">Spectral Analysis</a>
+      <a href="/lightdecoded/projects/imaging-study.md">Imaging Study</a>
+      <a href="/lightdecoded/projects/other-project.md">Other Project</a>
     </div>
   </div>
   
