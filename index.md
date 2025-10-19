@@ -10,11 +10,11 @@ layout: home
 title: Welcome
 ---
 
-# 👋 Hi, I'm Your Name  
+# 👋 Hi, I'm Dr. Will Rocha  
 **Spectral & Imaging Data Scientist**
 
-I specialize in extracting insights from complex spectra and imaging data — from astronomy to remote sensing.  
-My work focuses on **spectral fitting, image analysis, and AI-based data pipelines** that transform raw measurements into actionable science.
+I specialize in extracting insights from complex spectra and imaging data — from astronomy to medical imaging.  
+My work focuses on **spectral fitting, image analysis, and AI-based data pipelines** that transform raw measurements into actionable results.
 
 ---
 
@@ -23,7 +23,7 @@ My work focuses on **spectral fitting, image analysis, and AI-based data pipelin
 - Image processing and computer vision (OpenCV, scikit-image, deep learning)
 - Machine learning for feature extraction and classification
 - Reproducible pipelines (Python, NumPy, SciPy, Astropy)
-- Data visualization (Matplotlib, Plotly, Vega-Lite)
+- Data visualization (Matplotlib, Bokeh)
 
 ---
 
