@@ -42,6 +42,6 @@ Currently offering freelance consulting and development services for scientific 
 ---
 
 ## 📬 Contact
-📧 [you@example.com](mailto:you@example.com)  
-🔗 [LinkedIn](https://linkedin.com/in/your-linkedin-username)  
-💻 [GitHub](https://github.com/your-github-username)
+📧 [willrobsonastro@gmail.com](mailto:willrobsonastro@gmail.com)  
+🔗 [LinkedIn](https://www.linkedin.com/in/will-rocha-275b6374/)  
+💻 [GitHub](https://github.com/willastro)
