@@ -1,7 +1,3 @@
----
-title: "Spectral Analysis Portfolio"
----
-
 # Spectral Analysis: Unveiling the Secrets of Icy Molecular Clouds
 
 ![Spectral Analysis in Astronomy](https://www.eso.org/public/teles-instr/technology/spectroscopy/)
