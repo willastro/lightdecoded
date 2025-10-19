@@ -7,7 +7,7 @@
 
 <nav style="text-align:center; margin-bottom:2rem;">
   <a href="/index.html" style="margin:0 1rem;">Home</a>
-  <a href="./about.md" style="margin:0 1rem;">About</a>
+  <a href="/lightdecoded/about.md" style="margin:0 1rem;">About</a>
   <a href="/projects.md" style="margin:0 1rem;">Projects</a>
   <a href="/publications.md" style="margin:0 1rem;">Publications</a>
   <a href="/contact.md" style="margin:0 1rem;">Contact</a>
