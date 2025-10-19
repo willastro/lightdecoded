@@ -8,7 +8,17 @@
 <nav style="text-align:center; margin-bottom:2rem;">
   <a href="/lightdecoded/index.html" style="margin:0 1rem;">Home</a>
   <a href="/lightdecoded/about.md" style="margin:0 1rem;">About</a>
-  <a href="/lightdecoded/Portifolio/Project-1.md" style="margin:0 1rem;">Projects</a>
+  
+  <!-- Dropdown container -->
+  <div class="dropdown">
+    <button class="dropbtn">Projects ▾</button>
+    <div class="dropdown-content">
+      <a href="/lightdecoded/Portifolio/spectral-analysis.md">Spectral Analysis</a>
+      <a href="/lightdecoded/Portifolio/imaging-study.md">Imaging Study</a>
+      <a href="/lightdecoded/Portifolio/other-project.md">Other Project</a>
+    </div>
+  </div>
+  
   <a href="/lightdecoded/publications.md" style="margin:0 1rem;">Publications</a>
   <a href="/lightdecoded/contact.md" style="margin:0 1rem;">Contact</a>
 </nav>
