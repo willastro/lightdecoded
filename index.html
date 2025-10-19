@@ -83,15 +83,15 @@
 
   <div class="text">Your Name — Spectral & Imaging Data Scientist</div>
   <script>
-    // After animation ends (~8s total), redirect to index.md
+  // After animation ends (~8s total), fade and go to your main page
+  setTimeout(() => {
+    document.body.style.transition = "opacity 2s ease";
+    document.body.style.opacity = "0";
     setTimeout(() => {
-      document.body.style.transition = "opacity 2s ease";
-      document.body.style.opacity = "0";
-      setTimeout(() => {
-        window.location.href = "index.md";
-      }, 2000); // Wait for fade to finish
-    }, 8000);
-  </script>
+      window.location.href = "./"; // redirects to your main page (index.md)
+    }, 2000); // wait for fade
+  }, 8000);
+</script>
   
 </body>
 </html>
