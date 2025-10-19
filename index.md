@@ -1,6 +1,6 @@
 <script>
   if (!sessionStorage.getItem("visited")) {
-    sessionStorage.setItem("visited", "true");
+    sessionStorage.setItem("visited", "false");
     window.location.href = "splash.html";
   }
 </script>
