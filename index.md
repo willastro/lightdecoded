@@ -1,3 +1,10 @@
+<script>
+  if (!sessionStorage.getItem("visited")) {
+    sessionStorage.setItem("visited", "true");
+    window.location.href = "splash.html";
+  }
+</script>
+
 ---
 layout: home
 title: Welcome
