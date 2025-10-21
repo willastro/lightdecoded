@@ -45,17 +45,11 @@ My work focuses on **spectral fitting, image analysis, and AI-based data pipelin
 ### [ENIIGMA: AI-Based Spectral Fitting Tool](https://github.com/your-github-username/ENIIGMA)
 Developed an intelligent pipeline for automated spectral line fitting using Bayesian inference and deep learning techniques.
 
-### [Imaging Pipeline for Astronomical Observations](https://github.com/your-github-username/imaging-pipeline)
+### [Leiden Ice Database for Astrochemistry](https://github.com/your-github-username/imaging-pipeline)
 Built a robust data reduction and denoising system for CCD/IR images, including photometric calibration and feature extraction.
 
-### [Spectral Classifier](https://github.com/your-github-username/spectral-classifier)
+### [Medical Imaging Data Science](https://github.com/your-github-username/spectral-classifier)
 A lightweight Python package to classify astronomical spectra using PCA + Random Forest models.
-
----
-
-## 📄 About Me
-PhD in **Astrophysics and Astrochemistry** with extensive experience in **spectral modeling**, **image analysis**, and **data-driven research**.  
-Currently offering freelance consulting and development services for scientific data workflows.
 
 ---
 
