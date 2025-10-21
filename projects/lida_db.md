@@ -1,5 +1,5 @@
 ---
-title: "Leiden Ice Database Portfolioxx"
+title: "Leiden Ice Database Portfolio"
 ---
 
 # Spectral Analysis: Leiden Ice Database for Astrochemistry (LIDA)
