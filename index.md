@@ -13,7 +13,7 @@
   <div class="dropdown">
     <button class="dropbtn">Projects ▾</button>
     <div class="dropdown-content">
-      <a href="projects/spec_analysis/">Spectral Analysis</a>
+      <a href="projects/spec_analysis/">Spectral AnalysisX</a>
       <a href="projects/lida_db/">Leiden Ice Database for Astrochemistry</a>
     </div>
   </div>
