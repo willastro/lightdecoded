@@ -9,4 +9,4 @@ skin: dark
 # github_username: your-github-username
 # Optional social links
 # linkedin_username: your-linkedin-username
-show_excerpts: true
+show_excerpts: false
