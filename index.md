@@ -15,7 +15,7 @@
     <div class="dropdown-content">
       <a href="projects/spec_analysis/">Spectral Analysis</a>
       <a href="projects/lida_db/">Leiden Ice Database for Astrochemistry</a>
-      <a href="projects/mri/">Medical Imaging Data Science</a>
+      <a href="projects/mri/">Medical Imaging Data ScienceX</a>
     </div>
   </div>
   
