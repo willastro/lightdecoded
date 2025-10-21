@@ -1,6 +1,4 @@
 ---
-title: "Spectral Analysis Portfolio"
----
 
 # Spectral Analysis: Unveiling the Secrets of Icy Molecular Clouds
 
