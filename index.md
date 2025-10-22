@@ -7,7 +7,7 @@
 <link rel="stylesheet" href="/lightdecoded/assets/css/style.css">
 <nav style="text-align:center; margin-bottom:2rem;">
   <a href="/lightdecoded/index.html" style="margin:0 1rem;">Home</a>
-  <a href="/lightdecoded/about.md" style="margin:0 1rem;">About</a>
+  <a href="about/index.md" style="margin:0 1rem;">About</a>
   
   <!-- Dropdown container -->
   <div class="dropdown">
