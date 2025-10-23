@@ -71,12 +71,12 @@ th, td {
   border: 1px solid rgba(0,0,0,0.1);
   padding: 0.75rem 1rem;
   text-align: center;
-  color: #eee;
+  color: #222;
 }
 th {
   background: rgba(0,0,0,0.08);
   font-weight: 600;
-  color: #fff;
+  color: #222;
 }
 tr:nth-child(even) {
   background: rgba(0,0,0,0.04);
