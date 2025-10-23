@@ -85,10 +85,10 @@ Robust pipeline for cancer detection using computer vision.
 <section class="institutions-section">
   <h2>Institutions I Have Worked With</h2>
   <div class="institutions-logos">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/7/77/Leiden_University_logo.svg" alt="Leiden University">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/0/0c/NASA_logo.svg" alt="NASA">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5a/European_Space_Agency_logo.svg" alt="ESA">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/University_of_Tokyo_Logo.svg" alt="University of Tokyo">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b0/UniversiteitLeidenLogo.svg" alt="Leiden University">
+    <img src="https://www.citypng.com/public/uploads/preview/hd-nasa-logo-transparent-background-7017516947129576ypz4kes8x.png" alt="NASA">
+    <img src="https://upload.wikimedia.org/wikinews/en/thumb/8/80/ESA_logo.svg/170px-ESA_logo.svg.png?20171101083341" alt="ESA">
+    <img src="[https://upload.wikimedia.org/wikipedia/commons/e/e0/University_of_Tokyo_Logo.svg](https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Logo_Airbus_2014.svg/960px-Logo_Airbus_2014.svg.png?20150413134646)" alt="Airbus">
   </div>
 </section>
 
