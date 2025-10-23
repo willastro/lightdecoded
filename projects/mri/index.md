@@ -47,16 +47,6 @@ The **PyTorch CNN model** achieved an impressive **98.6% accuracy** on validatio
 
 ---
 
-
-## Results Summary
-| Tumor Type | Detection Accuracy |
-|-------------|--------------------|
-| Glioma | 100% |
-| Meningioma | > 87% |
-| Pituitary | ~98% |
-| No Cancer | Correctly classified in most cases |
-
-
 ## Results Summary
 
 | Tumor Type | Detection Accuracy |
@@ -72,7 +62,7 @@ table {
   margin: 1.5rem auto;
   width: 90%;
   max-width: 700px;
-  background: rgba(255,255,255,0.03);
+  background: rgba(0,0,0,0.03);
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 0 20px rgba(255,255,255,0.1);
