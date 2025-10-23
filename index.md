@@ -28,6 +28,27 @@
   <img src="https://willastro.github.io/lightdecoded/assets/images/Perfil_linkedin.jpg" alt="Profile">
 </div>
 
+<style>
+.mri-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+  margin: 1rem auto 1rem;
+}
+.mri-gallery img {
+  width: 10%;
+  max-width: 160px;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(255,255,255,0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.mri-gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255,255,255,0.25);
+}
+</style>
+
 I specialize in extracting insights from complex spectra and imaging data — from astronomy to medical imaging.  
 My work focuses on **spectral fitting, image analysis, and AI-based data pipelines** that transform raw measurements into actionable results.
 
