@@ -1,8 +1,6 @@
 ---
 
-# Spectral Analysis: Unveiling the Secrets of Icy Molecular Clouds
-
-![Spectral Analysis in Astronomy](https://www.eso.org/public/teles-instr/technology/spectroscopy/)
+# Spectral Analysis: Unveiling the Secrets of Space Icy
 
 Spectral analysis is a cornerstone of astrophysical research, enabling the identification and characterization of molecular compositions in the interstellar medium. Through the study of infrared spectra, we can infer the chemical makeup, physical conditions, and evolutionary stages of cosmic environments.
 
@@ -31,6 +29,111 @@ Building upon our previous work, this 2024 study focused on the detection of com
 ![Spectral Analysis Visualization](https://www.aanda.org/articles/aa/full_html/2021/10/aa39360-20/aa39360-20-fig17.jpg)
 
 The above visualization showcases the power of spectral analysis in identifying molecular features within infrared spectra. Tools like Spectrum in Python facilitate the estimation of power spectral densities, aiding in the interpretation of complex data sets.
+
+<!-- LIGHT DECODED IMAGE CAROUSEL -->
+<div class="carousel-container">
+  <img id="carousel" src="https://www.aanda.org/articles/aa/full_html/2021/10/aa39360-20/aa39360-20-fig17.jpg" alt="Spectral Analysis Visualization">
+
+  <div class="carousel-controls">
+    <button onclick="prev()" aria-label="Previous image">◀</button>
+    <button onclick="next()" aria-label="Next image">▶</button>
+  </div>
+
+  <div class="carousel-caption">Spectral Analysis Visualization</div>
+</div>
+
+<style>
+.carousel-container {
+  position: relative;
+  width: 80%;
+  max-width: 720px;
+  margin: 2rem auto;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 0 25px rgba(255,255,255,0.1);
+  background: radial-gradient(circle at 40% 60%, #0a0a0a, #000);
+}
+
+.carousel-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: opacity 1s ease-in-out;
+}
+
+.carousel-controls {
+  position: absolute;
+  bottom: 12px;
+  width: 100%;
+  text-align: center;
+}
+
+.carousel-controls button {
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.3);
+  color: #fff;
+  border-radius: 50%;
+  padding: 0.4rem 0.6rem;
+  margin: 0 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  backdrop-filter: blur(4px);
+  transition: all 0.3s ease;
+}
+
+.carousel-controls button:hover {
+  background: rgba(255,255,255,0.3);
+}
+
+.carousel-caption {
+  position: absolute;
+  bottom: 48px;
+  width: 100%;
+  text-align: center;
+  font-size: 0.95rem;
+  color: #ccc;
+  text-shadow: 0 0 8px rgba(255,255,255,0.3);
+}
+</style>
+
+<script>
+const images = [
+  {
+    src: "https://www.aanda.org/articles/aa/full_html/2021/10/aa39360-20/aa39360-20-fig17.jpg",
+    caption: "Spectral Analysis Visualization"
+  },
+  {
+    src: "https://www.aanda.org/articles/aa/full_html/2024/03/aa48427-23/aa48427-23-fig5.jpg",
+    caption: "Laboratory Ice Spectrum Comparison"
+  },
+  {
+    src: "https://www.aanda.org/articles/aa/full_html/2024/03/aa48427-23/aa48427-23-fig9.jpg",
+    caption: "Modeled Spectral Decomposition"
+  }
+];
+
+let i = 0;
+function showImage() {
+  const img = document.getElementById("carousel");
+  const caption = document.querySelector(".carousel-caption");
+  img.style.opacity = 0;
+  setTimeout(() => {
+    img.src = images[i].src;
+    caption.textContent = images[i].caption;
+    img.style.opacity = 1;
+  }, 500);
+}
+function next() { i = (i + 1) % images.length; showImage(); }
+function prev() { i = (i - 1 + images.length) % images.length; showImage(); }
+setInterval(next, 5000); // auto-slide every 5 seconds
+</script>
+
+
+
+
+
+
+
 
 ## Key Takeaways
 
