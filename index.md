@@ -1,7 +1,4 @@
-if (!sessionStorage.getItem("visited")) {
-    sessionStorage.setItem("visited", "true");
-    window.location.href = "splash.html";
-}
+
 </script>
 <link rel="stylesheet" href="/lightdecoded/assets/css/style.css">
 <nav style="text-align:center; margin-bottom:2rem;">
