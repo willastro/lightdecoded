@@ -12,11 +12,18 @@ In this 2021 study, I developed and introduced the **ENIIGMA** (Evolutionary Non
 
 [Read the full paper](https://www.aanda.org/articles/aa/full_html/2021/10/aa39360-20/aa39360-20.html)
 
-### 2. Detecting Icy Complex Organic Molecules and Ions
+### 2. First Detecting Icy Complex Organic Molecules and Ions in the Milky Way
 
 Building upon our previous work, this 2024 study focused on the detection of complex organic molecules (COMs) and ions in the ices of low- and high-mass protostars. Utilizing data from the **James Webb Space Telescope (JWST)**, we identified a diverse array of COMs in the ices of NGC 1333 IRAS 2A and IRAS 23385+6053, offering new insights into the chemical complexity of star-forming regions.
 
 [Read the full paper](https://www.aanda.org/articles/aa/full_html/2024/03/aa48427-23/aa48427-23.html)
+
+
+### 3. First Detecting Icy Complex Organic Molecules and Ions in another galaxy (Large Magellanic Cloud)
+
+Building upon our previous work, this 2024 study focused on the detection of complex organic molecules (COMs) and ions in the ices of low- and high-mass protostars. Utilizing data from the **James Webb Space Telescope (JWST)**, we identified a diverse array of COMs in the ices of NGC 1333 IRAS 2A and IRAS 23385+6053, offering new insights into the chemical complexity of star-forming regions.
+
+[Read the full paper](https://iopscience.iop.org/article/10.3847/2041-8213/ae0ccd)
 
 ## Methodology
 
@@ -144,9 +151,6 @@ function next() { i = (i + 1) % images.length; showImage(); }
 function prev() { i = (i - 1 + images.length) % images.length; showImage(); }
 setInterval(next, 5000); // auto-slide every 5 seconds
 </script>
-
-
-
 
 
 ## Key Takeaways
