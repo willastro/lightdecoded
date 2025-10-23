@@ -79,3 +79,61 @@ Robust pipeline for cancer detection using computer vision.
 📧 [willrobsonastro@gmail.com](mailto:willrobsonastro@gmail.com)  
 🔗 [LinkedIn](https://www.linkedin.com/in/will-rocha-275b6374/)  
 💻 [GitHub](https://github.com/willastro)
+
+
+<!-- INSTITUTIONS SECTION -->
+<section class="institutions-section">
+  <h2>Institutions I Have Worked With</h2>
+  <div class="institutions-logos">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/7/77/Leiden_University_logo.svg" alt="Leiden University">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/0/0c/NASA_logo.svg" alt="NASA">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5a/European_Space_Agency_logo.svg" alt="ESA">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/University_of_Tokyo_Logo.svg" alt="University of Tokyo">
+  </div>
+</section>
+
+<style>
+.institutions-section {
+  background: radial-gradient(circle at 50% 50%, #0a0a0a, #000);
+  padding: 3rem 1rem;
+  text-align: center;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  box-shadow: 0 0 40px rgba(255,255,255,0.05) inset;
+}
+
+.institutions-section h2 {
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+  letter-spacing: 0.03em;
+  text-shadow: 0 0 10px rgba(255,255,255,0.25);
+}
+
+.institutions-logos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+}
+
+.institutions-logos img {
+  height: 60px;
+  max-width: 140px;
+  object-fit: contain;
+  opacity: 0.85;
+  filter: drop-shadow(0 0 6px rgba(255,255,255,0.15));
+  transition: transform 0.3s ease, opacity 0.3s ease, filter 0.3s ease;
+}
+
+.institutions-logos img:hover {
+  transform: scale(1.1);
+  opacity: 1;
+  filter: drop-shadow(0 0 12px rgba(255,255,255,0.4));
+}
+</style>
+
+
+
