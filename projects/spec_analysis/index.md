@@ -26,9 +26,7 @@ Building upon our previous work, this 2024 study focused on the detection of com
 
 ## Visualizations
 
-![Spectral Analysis Visualization](https://www.aanda.org/articles/aa/full_html/2021/10/aa39360-20/aa39360-20-fig17.jpg)
-
-The above visualization showcases the power of spectral analysis in identifying molecular features within infrared spectra. Tools like Spectrum in Python facilitate the estimation of power spectral densities, aiding in the interpretation of complex data sets.
+The below visualization showcases the power of spectral analysis in identifying molecular features within infrared spectra using **ENIIGMA**. Tools like **ENIIGMA** facilitate the interpretation of complex spectral data sets.
 
 <!-- LIGHT DECODED IMAGE CAROUSEL -->
 <div class="carousel-container">
@@ -103,11 +101,11 @@ const images = [
     caption: "Spectral Analysis Visualization"
   },
   {
-    src: "https://www.aanda.org/articles/aa/full_html/2024/03/aa48427-23/aa48427-23-fig5.jpg",
+    src: "[https://www.aanda.org/articles/aa/full_html/2024/03/aa48427-23/aa48427-23-fig5.jpg](https://www.aanda.org/articles/aa/full_html/2024/03/aa48427-23/aa48427-23-fig6.jpg)",
     caption: "Laboratory Ice Spectrum Comparison"
   },
   {
-    src: "https://www.aanda.org/articles/aa/full_html/2024/03/aa48427-23/aa48427-23-fig9.jpg",
+    src: "[https://www.aanda.org/articles/aa/full_html/2024/03/aa48427-23/aa48427-23-fig9.jpg](https://www.aanda.org/articles/aa/full_html/2025/01/aa51505-24/aa51505-24-fig10.jpg)",
     caption: "Modeled Spectral Decomposition"
   }
 ];
