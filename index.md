@@ -24,6 +24,10 @@
 # 👋 Hi, I'm Dr. Will Rocha. Welcome to Light Decoded!  
 **Spectral & Imaging Data Scientist**
 
+<div class="mri-gallery">
+  <img src="https://willastro.github.io/lightdecoded/assets/images/Perfil_linkedin.jpg" alt="Profile">
+</div>
+
 I specialize in extracting insights from complex spectra and imaging data — from astronomy to medical imaging.  
 My work focuses on **spectral fitting, image analysis, and AI-based data pipelines** that transform raw measurements into actionable results.
 
