@@ -101,11 +101,11 @@ const images = [
     caption: "Spectral Analysis Visualization"
   },
   {
-    src: "[https://www.aanda.org/articles/aa/full_html/2024/03/aa48427-23/aa48427-23-fig5.jpg](https://www.aanda.org/articles/aa/full_html/2024/03/aa48427-23/aa48427-23-fig6.jpg)",
+    src: "https://www.aanda.org/articles/aa/full_html/2024/03/aa48427-23/aa48427-23-fig6.jpg",
     caption: "Laboratory Ice Spectrum Comparison"
   },
   {
-    src: "[https://www.aanda.org/articles/aa/full_html/2024/03/aa48427-23/aa48427-23-fig9.jpg](https://www.aanda.org/articles/aa/full_html/2025/01/aa51505-24/aa51505-24-fig10.jpg)",
+    src: "https://www.aanda.org/articles/aa/full_html/2025/01/aa51505-24/aa51505-24-fig10.jpg",
     caption: "Modeled Spectral Decomposition"
   }
 ];
