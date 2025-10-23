@@ -45,23 +45,24 @@ The below visualization showcases the power of spectral analysis in identifying 
 <style>
 .carousel-container {
   position: relative;
-  width: 80%;
-  max-width: 760px;
-  margin: 2.5rem auto;
-  padding-bottom: 2rem; /* reserve vertical space for caption + buttons */
+  width: 82%;
+  max-width: 780px;
+  margin: 3rem auto; /* more top space */
+  padding: 2rem 0 2.5rem; /* more breathing room top/bottom */
   border-radius: 1rem;
   overflow: hidden;
-  box-shadow: 0 0 25px rgba(255,255,255,0.15);
-  background: radial-gradient(circle at 40% 60%, #0a0a0a, #000);
+  box-shadow: 0 0 30px rgba(255,255,255,0.15);
+  background: radial-gradient(circle at 40% 60%, #0c0c0c, #000);
 }
 
 .carousel-image-wrapper {
   width: 100%;
-  height: 440px; /* slightly taller for aesthetics */
+  height: 500px; /* larger figures */
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  padding-top: 0.8rem; /* subtle top breathing space inside wrapper */
 }
 
 .carousel-image-wrapper img {
@@ -69,21 +70,21 @@ The below visualization showcases the power of spectral analysis in identifying 
   max-height: 100%;
   object-fit: contain;
   transition: opacity 1s ease-in-out;
-  border-radius: 0.5rem;
+  border-radius: 0.6rem;
 }
 
 .carousel-caption {
   text-align: center;
-  font-size: 1rem;
-  margin-top: 0.8rem;
-  color: #ccc;
-  text-shadow: 0 0 8px rgba(255,255,255,0.3);
-  min-height: 1.2rem; /* keeps layout stable while captions change */
+  font-size: 1.05rem;
+  margin-top: 1rem;
+  color: #ddd;
+  text-shadow: 0 0 10px rgba(255,255,255,0.3);
+  min-height: 1.3rem;
 }
 
 .carousel-controls {
   text-align: center;
-  margin-top: 1rem;
+  margin-top: 1.3rem;
 }
 
 .carousel-controls button {
@@ -91,9 +92,9 @@ The below visualization showcases the power of spectral analysis in identifying 
   border: 1px solid rgba(255,255,255,0.3);
   color: #fff;
   border-radius: 50%;
-  padding: 0.6rem 0.9rem;
-  margin: 0 0.6rem;
-  font-size: 1.2rem;
+  padding: 0.7rem 1rem;
+  margin: 0 0.7rem;
+  font-size: 1.25rem;
   cursor: pointer;
   backdrop-filter: blur(6px);
   transition: all 0.3s ease;
@@ -135,6 +136,7 @@ function next() { i = (i + 1) % images.length; showImage(); }
 function prev() { i = (i - 1 + images.length) % images.length; showImage(); }
 setInterval(next, 5000); // auto-slide every 5 seconds
 </script>
+
 
 
 
