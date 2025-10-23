@@ -50,8 +50,8 @@ The **PyTorch CNN model** achieved an impressive **98.6% accuracy** on validatio
 ## Results Summary
 
 <div class="mri-gallery">
-  <img src="https://willastro.github.io/lightdecoded/assets/images/MRI_portifolio.pdf" alt="MRI Glioma Example">
-  <img src="https://willastro.github.io/lightdecoded/assets/images/MRI_portifolio2.pdf" alt="MRI Meningioma Example">
+  <img src="https://willastro.github.io/lightdecoded/assets/images/MRI_portifolio.png" alt="MRI Glioma Example">
+  <img src="https://willastro.github.io/lightdecoded/assets/images/MRI_portifolio2.png" alt="MRI Meningioma Example">
 </div>
 
 
