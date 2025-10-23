@@ -30,67 +30,77 @@ The below visualization showcases the power of spectral analysis in identifying 
 
 <!-- LIGHT DECODED IMAGE CAROUSEL -->
 <div class="carousel-container">
-  <img id="carousel" src="https://www.aanda.org/articles/aa/full_html/2021/10/aa39360-20/aa39360-20-fig17.jpg" alt="Spectral Analysis Visualization">
+  <div class="carousel-image-wrapper">
+    <img id="carousel" src="https://www.aanda.org/articles/aa/full_html/2021/10/aa39360-20/aa39360-20-fig17.jpg" alt="Spectral Analysis Visualization">
+  </div>
+
+  <div class="carousel-caption">Spectral Analysis - Elias 29</div>
 
   <div class="carousel-controls">
     <button onclick="prev()" aria-label="Previous image">◀</button>
     <button onclick="next()" aria-label="Next image">▶</button>
   </div>
-
-  <div class="carousel-caption">Spectral Analysis Visualization</div>
 </div>
 
 <style>
 .carousel-container {
   position: relative;
   width: 80%;
-  max-width: 720px;
-  margin: 2rem auto;
+  max-width: 760px;
+  margin: 2.5rem auto;
+  padding-bottom: 2rem; /* reserve vertical space for caption + buttons */
   border-radius: 1rem;
   overflow: hidden;
-  box-shadow: 0 0 25px rgba(255,255,255,0.1);
+  box-shadow: 0 0 25px rgba(255,255,255,0.15);
   background: radial-gradient(circle at 40% 60%, #0a0a0a, #000);
 }
 
-.carousel-container img {
+.carousel-image-wrapper {
   width: 100%;
-  height: auto;
-  display: block;
+  height: 440px; /* slightly taller for aesthetics */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.carousel-image-wrapper img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
   transition: opacity 1s ease-in-out;
+  border-radius: 0.5rem;
+}
+
+.carousel-caption {
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 0.8rem;
+  color: #ccc;
+  text-shadow: 0 0 8px rgba(255,255,255,0.3);
+  min-height: 1.2rem; /* keeps layout stable while captions change */
 }
 
 .carousel-controls {
-  position: absolute;
-  bottom: 0px;
-  width: 100%;
   text-align: center;
+  margin-top: 1rem;
 }
 
 .carousel-controls button {
-  background: rgba(255,255,255,0.1);
+  background: rgba(255,255,255,0.12);
   border: 1px solid rgba(255,255,255,0.3);
   color: #fff;
   border-radius: 50%;
-  padding: 0.4rem 0.6rem;
-  margin: 0 0.5rem;
-  font-size: 1rem;
+  padding: 0.6rem 0.9rem;
+  margin: 0 0.6rem;
+  font-size: 1.2rem;
   cursor: pointer;
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(6px);
   transition: all 0.3s ease;
 }
 
 .carousel-controls button:hover {
-  background: rgba(255,255,255,0.3);
-}
-
-.carousel-caption {
-  position: absolute;
-  bottom: 48px;
-  width: 100%;
-  text-align: center;
-  font-size: 0.95rem;
-  color: #ccc;
-  text-shadow: 0 0 8px rgba(255,255,255,0.3);
+  background: rgba(255,255,255,0.25);
 }
 </style>
 
@@ -119,13 +129,12 @@ function showImage() {
     img.src = images[i].src;
     caption.textContent = images[i].caption;
     img.style.opacity = 1;
-  }, 500);
+  }, 400);
 }
 function next() { i = (i + 1) % images.length; showImage(); }
 function prev() { i = (i - 1 + images.length) % images.length; showImage(); }
 setInterval(next, 5000); // auto-slide every 5 seconds
 </script>
-
 
 
 
