@@ -10,7 +10,7 @@ Spectral analysis is a cornerstone of astrophysical research, enabling the ident
 
 ### 1. Fitting Infrared Ice Spectra with Genetic Modelling Algorithms
 
-In this 2021 study, we introduced the **ENIIGMA** (Evolutionary Non-linear Infrared Ice Gas Modelling Algorithm), a genetic algorithm-based tool designed to fit complex infrared spectra of interstellar ices. By applying ENIIGMA to the Elias 29 molecular cloud, we successfully modeled the ice composition, revealing the presence of key organic molecules and providing insights into the physical conditions of the cloud.
+In this 2021 study, I developed and introduced the **ENIIGMA** (Evolutionary Non-linear Infrared Ice Modelling Algorithm), a genetic algorithm-based tool designed to fit complex infrared spectra of interstellar ices. By applying ENIIGMA to the Elias 29 molecular cloud, we successfully modeled the ice composition of this source, thus highlighting the potential of the software.
 
 [Read the full paper](https://www.aanda.org/articles/aa/full_html/2021/10/aa39360-20/aa39360-20.html)
 
@@ -28,7 +28,7 @@ Building upon our previous work, this 2024 study focused on the detection of com
 
 ## Visualizations
 
-![Spectral Analysis Visualization](https://research.pasteur.fr/en/software/spectral-analysis-in-python/)
+![Spectral Analysis Visualization](https://www.aanda.org/articles/aa/full_html/2021/10/aa39360-20/aa39360-20-fig17.jpg)
 
 The above visualization showcases the power of spectral analysis in identifying molecular features within infrared spectra. Tools like Spectrum in Python facilitate the estimation of power spectral densities, aiding in the interpretation of complex data sets.
 
