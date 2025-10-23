@@ -37,7 +37,7 @@
   margin: 1rem auto 1rem;
 }
 .mri-gallery img {
-  width: 10%;
+  width: 20%;
   max-width: 160px;
   border-radius: 10px;
   box-shadow: 0 0 12px rgba(255,255,255,0.12);
