@@ -1,6 +1,6 @@
 ---
 
-# Spectral Analysis: Unveiling the Secrets of Space Icy
+# Spectral Analysis: Unveiling the Secrets of Space Ice
 
 Spectral analysis is a cornerstone of astrophysical research, enabling the identification and characterization of molecular compositions in the interstellar medium. Through the study of infrared spectra, we can infer the chemical makeup, physical conditions, and evolutionary stages of cosmic environments.
 
