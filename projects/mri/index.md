@@ -1,5 +1,6 @@
 ---
-
+layout: default
+---
 # MRI Image Analysis Portfolio
 
 ## Project Overview
