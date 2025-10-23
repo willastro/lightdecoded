@@ -1,4 +1,3 @@
-<img width="800" height="800" alt="image" src="https://github.com/user-attachments/assets/67570474-f05b-4e1a-bb76-d6f1b7d2ed25" /><script>
   if (!sessionStorage.getItem("visited")) {
     sessionStorage.setItem("visited", "true");
     window.location.href = "splash.html";
