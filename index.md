@@ -1,4 +1,4 @@
-<script>
+<img width="800" height="800" alt="image" src="https://github.com/user-attachments/assets/67570474-f05b-4e1a-bb76-d6f1b7d2ed25" /><script>
   if (!sessionStorage.getItem("visited")) {
     sessionStorage.setItem("visited", "true");
     window.location.href = "splash.html";
@@ -85,10 +85,10 @@ Robust pipeline for cancer detection using computer vision.
 <section class="institutions-section">
   <h2>Institutions I Have Worked With</h2>
   <div class="institutions-logos">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b0/UniversiteitLeidenLogo.svg" alt="Leiden University">
-    <img src="https://www.citypng.com/public/uploads/preview/hd-nasa-logo-transparent-background-7017516947129576ypz4kes8x.png" alt="NASA">
-    <img src="https://upload.wikimedia.org/wikinews/en/thumb/8/80/ESA_logo.svg/170px-ESA_logo.svg.png?20171101083341" alt="ESA">
-    <img src="[https://upload.wikimedia.org/wikipedia/commons/e/e0/University_of_Tokyo_Logo.svg](https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Logo_Airbus_2014.svg/960px-Logo_Airbus_2014.svg.png?20150413134646)" alt="Airbus">
+    <img src="https://www.universiteitleiden.nl/binaries/content/assets/algemeen/dossiers/450-jaar/beeldscherm/beeldscherm-logoul-450diap.png" alt="Leiden University">
+    <img src="https://www.citypng.com/public/uploads/preview/nasa-white-logo-free-png-701751694712949kl9wa1xf80.png" alt="NASA">
+    <img src="https://esahubble.org/media/archives/logos/medium/esa_screen_white.jpg" alt="ESA">
+    <img src="https://brand.airbus.com/sites/g/files/jlcbta121/files/styles/w900/public/2021-06/logo_white.webp?itok=qH71b_6l" alt="Airbus">
   </div>
 </section>
 
