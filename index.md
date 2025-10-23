@@ -42,14 +42,14 @@ My work focuses on **spectral fitting, image analysis, and AI-based data pipelin
 ---
 
 ## 🔬 Featured Projects
-### [ENIIGMA: AI-Based Spectral Fitting Tool](https://github.com/your-github-username/ENIIGMA)
-Developed an intelligent pipeline for automated spectral line fitting using Bayesian inference and deep learning techniques.
+### [ENIIGMA: AI-Based Spectral Fitting Tool](https://willastro.github.io/lightdecoded/projects/spec_analysis/)
+Intelligent pipeline for spectral fitting using AI.
 
-### [Leiden Ice Database for Astrochemistry](https://github.com/your-github-username/imaging-pipeline)
-Built a robust data reduction and denoising system for CCD/IR images, including photometric calibration and feature extraction.
+### [Leiden Ice Database for Astrochemistry](https://willastro.github.io/lightdecoded/projects/lida_db/)
+Relational database built with Python-Flask and SQL.
 
-### [Medical Imaging Data Science](https://github.com/your-github-username/spectral-classifier)
-A lightweight Python package to classify astronomical spectra using PCA + Random Forest models.
+### [Medical Imaging Data Science](https://willastro.github.io/lightdecoded/projects/mri/)
+Robust pipeline for cancer detection using computer vision.
 
 ---
 
