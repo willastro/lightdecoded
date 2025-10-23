@@ -118,6 +118,14 @@ const images = [
   {
     src: "https://www.aanda.org/articles/aa/full_html/2025/01/aa51505-24/aa51505-24-fig10.jpg",
     caption: "Spectral Analysis - Ced 110 IRS4A"
+  },
+  {
+    src: "https://content.cld.iop.org/journals/2041-8205/992/2/L30/revision2/apjlae0ccdf3_lr.jpg",
+    caption: "Spectral Analysis - ST6"
+  },
+  {
+    src: "https://media.springernature.com/m312/springer-static/image/art%3A10.1038%2Fs41586-025-09163-z/MediaObjects/41586_2025_9163_Fig3_HTML.png?",
+    caption: "Spectral Analysis - HOPS-315"
   }
 ];
 
