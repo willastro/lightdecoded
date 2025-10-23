@@ -21,7 +21,7 @@ Building upon our previous work, this 2024 study focused on the detection of com
 
 ### 3. First Detecting Icy Complex Organic Molecules and Ions in another galaxy (Large Magellanic Cloud)
 
-Building upon our previous work, this 2024 study focused on the detection of complex organic molecules (COMs) and ions in the ices of low- and high-mass protostars. Utilizing data from the **James Webb Space Telescope (JWST)**, we identified a diverse array of COMs in the ices of NGC 1333 IRAS 2A and IRAS 23385+6053, offering new insights into the chemical complexity of star-forming regions.
+On an extension of the 2024 work, we detected COMs and ions outside the Milky Way, in the Large Magellanic Cloud. Here, we utilised hyperspectral data cubes from the **James Webb Space Telescope (JWST)**. 
 
 [Read the full paper](https://iopscience.iop.org/article/10.3847/2041-8213/ae0ccd)
 
