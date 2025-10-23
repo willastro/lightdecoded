@@ -61,7 +61,7 @@ The below visualization showcases the power of spectral analysis in identifying 
 
 .carousel-controls {
   position: absolute;
-  bottom: 200px;
+  bottom: 0px;
   width: 100%;
   text-align: center;
 }
